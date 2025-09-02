@@ -1,0 +1,697 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+
+  --text-primary-for-dark-mode:#F6f6f6;
+  --text-secondary-for-dark-mode:#9b9b9b;
+  --text-tertiary-for-dark-mode:#6D6D6D;
+
+  --background-primary-for-dark-mode:#0D0D0D;
+  --background-secondary-for-dark-mode:#1A1D25;
+
+  --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #081A34 0%, #0C0E1A 50%);
+
+  --portfolio-card-background: linear-gradient(93deg, #262B35 -1.28%, #171B22 99.56%, #21252C 99.56%);
+  
+  --portfolio-category-tag:#171B25;
+  --toogle-background:#2C2E3B;
+  --service-card-hover:linear-gradient(237deg, rgba(146, 171, 237, 0.47) -13.88%, rgba(146, 171, 237, 0.00) 100%), #0D0D0D;
+  --half-circle-background:linear-gradient(159deg, #F6F6F6 7.39%, #759CFF 73.45%);
+
+
+  --border-line-one-for-dark-mode:#222A3D;
+
+  --primary-color-for-dark-mode:#759CFf;
+
+  --button-color:linear-gradient(180deg, rgba(255, 255, 255, 0.20) 22.34%, rgba(255, 255, 255, 0.00) 66.67%),#759CFF;
+  --button-in-portfolio-section:#222A3D;
+
+  --navbar-shadow-color:rgba(74, 74, 74, 0.15);
+  --service-card-shadow:rgba(185, 185, 185, 0.0);
+  --card-border:#222A3D;
+
+
+  --font-1:'Nunito Sans', sans-serif;
+  --font-2:'Open Sans', sans-serif;
+}
+body.light-mode {
+
+  --text-primary-for-dark-mode:#0A0911;
+  --text-secondary-for-dark-mode:#666666;
+  --text-tertiary-for-dark-mode:#8E8E92;
+
+  --background-primary-for-dark-mode:#ffffff;
+  --background-secondary-for-dark-mode:#f6f6f6;
+  --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #f3f6ff 0%, #f9fbff 50%);
+
+  --portfolio-card-background:#FFF;
+  --toogle-background:#e1e1e1;
+  --portfolio-category-tag:#F6F6F6;
+  --service-card-hover:linear-gradient(227deg, rgba(181, 199, 243, 0.46) 0%, rgba(231, 237, 251, 0.00) 100%), #FFF;
+  --half-circle-background:linear-gradient(150deg, #B5C7F3 7.69%, #1149D7 103.89%);
+
+  --border-line-one-for-dark-mode:#E7E6E7;
+
+  --primary-color-for-dark-mode:#1149D7;
+
+  --button-color:linear-gradient(180deg, rgba(255, 255, 255, 0.20) 22.34%, rgba(255, 255, 255, 0.00) 66.67%),#1149D7;
+  --button-in-portfolio-section:#E7EDFB;
+
+  --navbar-shadow-color:rgba(187, 187, 187, 0.15);
+  --service-card-shadow:rgba(209, 209, 209, 0.15);
+  --card-border:rgb(230, 230, 230);
+
+
+
+
+  --font-1:'Nunito Sans', sans-serif;
+  --font-2:'Open Sans', sans-serif;
+}
+
+
+  
+  /* LARGE DEVICE SCREEN */
+  
+  @media (min-width: 1200px) {
+  
+  }
+
+  @media (min-width: 992px) and (max-width:1199px) {
+
+
+  }
+  
+  
+  
+  /* MEDIUM DEVICE SCREEN */
+
+  @media (min-width: 768px) and (max-width:991px) {
+    .switch {
+      display: inline-block;}
+      .navbar-link-holder{
+        padding-left: 36px;
+      padding-right: 36px;
+      }
+      .logo {
+        font-size: 28px;
+      }
+  
+      .slider:before{
+      bottom: 4px;
+      }
+      .conatainer-for-toogle-switch{
+      position: relative;
+      right:0;
+      }
+  
+  
+  .navbar-collapse {
+  height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; 
+  }
+  
+  
+  .navbar-collapse.show {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .navbar-nav {
+  flex-direction: column;
+  align-items:center;
+  }
+  
+  .navbar-nav .nav-item .nav-link.selected::after{
+  display: none;
+  align-items: center;
+  
+  }
+  
+  .nav-item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .nav-item .nav-link{
+  font-size: 20px;
+  }
+  
+  
+  .overlay.active {
+    display: block !important;
+    animation: slideInTopRight 0.5s ease forwards;
+  
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    padding: 20px;
+    color: white; 
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .overlay.active .overlay-content {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  
+  .navbar{
+    height: 57px !important;
+  }
+  
+  .overlay {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:var(--background-primary-for-dark-mode);
+    z-index:99;
+  }
+  
+
+  /* HERO SECTION STARTS HERE */
+
+  .gallery-text{
+    font-size: 130px;
+  }
+
+  .container-for-hero-section-in-resume-page{
+    min-height: 300px;
+    padding-top:60px;
+  }
+  .hero-section-text {
+    height:250px;
+  }
+
+  .svg3{
+    top: 30px;
+    left: 54px;
+
+  }
+
+  .svg1{
+    left: 10px;
+  }
+
+.svg4{
+  right: 65px;
+}
+.svg2{
+  top: 0;
+  right: 0;
+}
+
+
+  .container-for-personal-content-in-about-page{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  /* HERO SECTION ENDS HERE */
+
+  /* ABOUT SECTION STARTS HERE */
+  .text-container-in-about{
+    padding-top: 16px;
+
+  }
+
+ /* ABOUT SECTION ENDS HERE */
+
+/* PERSONAL SECTION STARTS HERE */
+
+.personal-section{
+  padding-bottom: 60px;
+}
+  
+.left-side-conatiner-for-details{
+  border-right: none;
+ padding-right: 12px;
+ padding-bottom: 16px;
+}
+.right-side-conatiner-for-details{
+  padding-left: 12px;
+}
+  
+
+.what-i-do-parent-container-for-text{
+  padding-right: 12px;
+  padding-bottom: 24px;
+}
+  
+
+.what-i-do-parent-container-for-service{
+  padding-left: 12px;
+
+}
+
+.container-for-what-i-do-card{
+
+}
+.icon-and-name{
+flex-direction: column !important;
+align-items: start !important;
+margin-bottom: 12px;
+}
+
+.container-for-what-i-do-card svg{
+  margin-bottom: 16px;
+  margin-right: 0;
+}
+
+.parent-container-for-what-i-do-section{
+  padding-bottom: 60px;
+}
+
+.parent-container-for-education-and-experience{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.year-container {
+  margin-bottom: 16px;
+}
+
+.degree-name {
+  margin-bottom: 8px;
+}
+.institution-name {
+  padding-bottom: 8px;
+}
+
+
+.parent-container-for-skills{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+  
+  }
+  
+
+  
+ 
+  
+  
+  
+  /* SMALL DEVICE SCREEN */
+  
+  @media (max-width:767px) {
+
+    /* NAVBAR */
+
+    .navbar{
+      height: 52px !important;
+    }
+    
+    
+    .logo{
+      font-size: 20px;
+    }
+    .logo .rajit{
+      height: 22px !important;
+    }
+
+    .logo svg {
+      height: 24px;
+      margin-right: 4px;
+  }
+    .navbar-toggler i{
+      font-size: 32px;
+    }
+    
+
+    .container { 
+        padding-left:20px !important;
+        padding-right: 20px !important;}
+    
+      .navbar-collapse {
+        height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out; 
+    }
+    
+    .navbar-collapse.show {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    /* .navbar {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    } */
+    .navbar-nav {
+      flex-direction: column;
+      align-items:center;
+    }
+    
+    .navbar-nav .nav-item .nav-link.selected::after{
+      display: none;
+      align-items: center;
+    
+    }
+
+    .navbar-link-holder{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .switch {
+      display: inline-block; /* Display elements in a line */
+  }
+  .slider:before{
+    bottom: 4px;
+    }
+  
+  .conatainer-for-toogle-switch{
+  position: relative;
+  right:0;
+  }
+
+    
+    .nav-item{
+      margin-top: 20px;
+  margin-bottom: 20px;
+    }
+    
+    .nav-item .nav-link{
+      font-size: 20px;
+    }
+
+
+    .progress-wrap{
+        right:20px;
+    }
+     /* NAVBAR */
+
+     .gallery-text{
+      font-size: 56px;
+     }
+
+     .a-bit-about-me-text{
+        font-size: 20px;
+        max-width:80%;
+        margin-top: -14px;
+        
+
+    }
+
+    .container-for-hero-section-in-resume-page{
+        min-height: 200px !important;
+        max-height: 200px !important;
+    }
+
+    .hero-section-text{
+      height: 200px;
+    }
+  
+    .image-container-in-about{
+        padding-right: 12px;
+    }
+
+
+  /* HERO SECTION */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:var(--background-primary-for-dark-mode);
+    z-index:99;
+  }
+  
+  
+  
+  
+  
+  .overlay.active {
+    display: block;
+    animation: slideInTopRight 0.5s ease forwards;
+  
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    padding: 20px;
+    color: white; /* Adjust text color */
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .overlay.active .overlay-content {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  
+  
+  .professional-background-text{
+    font-size: 32px;
+    color: #f3f3f3;
+  }
+
+  .svg1{
+    width: 48px;
+    height: 48px;
+    left: 20px;
+  }
+  .svg3{
+    width: 32px;
+    height: 32px;
+    left: 46px;
+    top: 5px;
+  }
+
+  .svg2{
+    width: 48px;
+    height: 48px;
+    top: -10px;
+
+  }
+
+  .svg4{
+    width: 32px;
+    height: 32px;
+    right: 42px;
+    bottom: 24px;
+  
+  }
+
+
+
+
+/* ABOUT SECTION */
+.container-for-personal-content-in-about-page{
+  padding-top: 24px;
+  padding-bottom: 35px;
+}
+.about-section-image{
+  min-height: 240px;
+  max-height: 250px;
+}
+.text-container-in-about{
+  padding-top: 16px;
+}
+
+.i-am-passionate-designer-text{
+  font-size: 24px;
+}
+
+/* PERSONAL SECTION */
+
+.personal-section{
+  padding-bottom: 35px;
+}
+.personal-details-heading-text{
+  font-size: 32px;
+  margin-bottom: 24px;
+
+}
+
+.parent-container-for-personal-details{
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.left-side-conatiner-for-details{
+  border-right: none;
+  padding-right: 12px;
+  padding-bottom: 16px;
+}
+
+.name-of-details{
+  font-size: 16px;
+}
+.value-of-details{
+  font-size: 16px;
+}
+
+.right-side-conatiner-for-details{
+  padding-left: 12px;
+}
+
+/* WHAT I DO SECTION */
+.parent-container-for-what-i-do-section{
+    padding-bottom: 24px;
+}
+
+     .what-i-do-parent-container-for-text {
+        padding-right: 12px;
+     }
+    .what-i-do{
+        font-size: 32px;
+
+    }
+
+
+    .what-i-do-para{
+        font-weight: normal;
+        text-align: left;
+    }
+    .download-resume-button{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .what-i-do-parent-container-for-service {
+        padding-left: 12px;
+        margin-top: 24px;
+    }
+
+    .container-for-what-i-do-card:hover{
+        transform: translateY(0px);
+    }
+
+    .degree-name{
+      font-size: 20px;
+    }
+
+    .separate-education-container{
+        border: 1px solid var(--border-line-one-for-dark-mode);
+    }
+
+    .parent-container-for-education-and-experience{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .education-icon-container, .office-icon-container{
+        margin-right: 12px;
+    }
+    .education, .experience{
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .parent-container-for-education{
+        margin-bottom: 35px;
+        margin-right: 0;
+    }
+    .parent-container-for-experience{
+        margin-left: 0;
+    }
+
+    .imgContainer{
+        width: 120px;
+        height: 120px;
+    }
+
+    .forborder{
+        margin-top: 16px;
+    }
+
+    .parent-container-for-skills{
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+
+    .skills{
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .skills-name{
+        font-size: 20px;
+
+    }
+    .percentage-value{
+        font-size: 16px;
+    }
+
+    .bottle{
+        top: 28px;
+        height:48px;
+        width: 48px;
+
+    }
+        
+
+    .container-for-what-i-do-card svg{
+      margin-bottom: 12px;
+      margin-right: 0;
+    }
+.icon-and-name{
+    margin-bottom: 8px;
+    flex-direction: column !important;
+    justify-content: start !important;
+    align-items: start !important;
+}
+    
+
+/* EDUCATION AND EXPERIENCE */
+
+.year-container{
+  margin-bottom: 16px;
+}
+
+.degree-name{
+  margin-bottom: 8px;
+}
+.institution-name{
+  padding-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+    /* FOOTER SECTION STARTS HERE */
+    .parent-container-for-footer{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    }
+  
+    .follow-me-text{
+        font-size: 20px;
+    }
+    
+
+
+  
+  /* FOOTER SECTION ENDS HERE */
+  }

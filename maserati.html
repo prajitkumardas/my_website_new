@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="Images/favicon_prajit.png" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font CSS -->
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio_responsive.css">
+    <link rel="stylesheet" href="css/portfolio_content.css">
+
+    <!-- Script File -->
+    
+    <title>Prajit</title>
+</head>
+
+<body>
+    <div class="pre-loader" id="preLoader">
+        <div class="loader" id="loader">
+        </div>
+        <div class="loading-text" id="loading-text">
+        </div>
+
+    </div>
+
+    <!-- PROGRESS ICON STARTS HERE -->
+    <div class="progress-wrap">
+        <i class="bi bi-arrow-up"></i>
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- PROGRESS ICON ENDS HERE -->
+
+    <!-- NAVBAR STARTS HERE -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid navbar-link-holder">
+            <a href="index.html" aria-label="switch">
+                <h1 class="logo">
+                    <svg viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.501 2.48762C17.8689 0.896718 15.6811 0.00438978 13.4019 0L0 0V24.4876C2.1151 24.0824 4.07267 23.0879 5.64713 21.6186C7.2216 20.1492 8.34887 18.265 8.89905 16.1829C9.14845 15.2366 9.27646 14.2624 9.28 13.2838C9.27983 12.7741 9.24547 12.2651 9.17714 11.76H11.8781C11.8406 11.96 11.8176 12.1624 11.8095 12.3657C11.811 13.1125 12.0121 13.8452 12.3918 14.4882C12.7716 15.1312 13.3163 15.661 13.9695 16.0229C14.0041 16.0481 14.0411 16.0698 14.08 16.0876C14.6338 16.3983 15.2583 16.561 15.8933 16.56H16.0838C16.676 16.5584 17.2609 16.4284 17.7981 16.179C18.2187 15.9309 18.6187 15.6494 18.9943 15.3371C20.5161 14.0837 21.5567 12.3417 21.939 10.4076C22.0449 9.85515 22.0984 9.29394 22.099 8.73143C22.1046 7.56996 21.8776 6.41913 21.4314 5.34678C20.9852 4.27443 20.3288 3.30227 19.501 2.48762ZM13.5048 7.2381C12.8216 8.33088 12.3319 9.53324 12.0571 10.7924H9.00952C8.7235 9.50135 8.21427 8.27016 7.50476 7.15429L10.2133 1.59238V6.21333C9.98666 6.2802 9.79167 6.42651 9.66409 6.62544C9.53651 6.82437 9.48488 7.06262 9.51866 7.29652C9.55244 7.53042 9.66937 7.74432 9.84803 7.89902C10.0267 8.05373 10.2551 8.13888 10.4914 8.13888C10.7278 8.13888 10.9562 8.05373 11.1348 7.89902C11.3135 7.74432 11.4304 7.53042 11.4642 7.29652C11.498 7.06262 11.4463 6.82437 11.3188 6.62544C11.1912 6.42651 10.9962 6.2802 10.7695 6.21333H10.7886V1.6419L13.5048 7.2381ZM10.8381 7.13905C10.8389 7.20476 10.8201 7.2692 10.7841 7.32421C10.7481 7.37921 10.6967 7.42228 10.6362 7.44795C10.5757 7.47362 10.5089 7.48073 10.4444 7.46838C10.3798 7.45602 10.3204 7.42476 10.2737 7.37856C10.227 7.33237 10.195 7.27332 10.1819 7.20893C10.1688 7.14454 10.1751 7.0777 10.2001 7.01692C10.2251 6.95614 10.2676 6.90415 10.3221 6.86756C10.3767 6.83097 10.441 6.81143 10.5067 6.81143C10.5508 6.81191 10.5945 6.82122 10.635 6.83881C10.6755 6.8564 10.7121 6.88192 10.7427 6.91387C10.7732 6.94581 10.797 6.98354 10.8128 7.02482C10.8285 7.06611 10.8358 7.11013 10.8343 7.15429L10.8381 7.13905ZM7.48952 11.5124V11.021H13.5124V11.5124H7.48952Z" fill="#1149D7"/>
+                    </svg>
+    
+                        <svg class="rajit" viewBox="0 0 49 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.8235 19.9475H0V5.49714H3.55137V7.55176C4.15914 6.58114 4.70341 5.94162 5.18418 5.6332C5.67402 5.32478 6.22737 5.17057 6.84421 5.17057C7.71504 5.17057 8.55412 5.41096 9.36146 5.89173L8.17767 9.22539C7.53362 8.80812 6.93492 8.59948 6.38158 8.59948C5.84638 8.59948 5.39282 8.74915 5.0209 9.0485C4.64898 9.33878 4.35417 9.86944 4.13646 10.6405C3.92782 11.4115 3.8235 13.0262 3.8235 15.4845V19.9475Z" fill="black"/>
+                            <path d="M13.8789 9.90573L10.4092 9.27982C10.7992 7.88286 11.4705 6.84874 12.423 6.17747C13.3755 5.50621 14.7906 5.17057 16.6683 5.17057C18.3737 5.17057 19.6436 5.37467 20.4782 5.78288C21.3127 6.18201 21.8978 6.69453 22.2335 7.32044C22.5782 7.93728 22.7505 9.07572 22.7505 10.7357L22.7097 15.1988C22.7097 16.4687 22.7687 17.4076 22.8866 18.0154C23.0136 18.6141 23.2449 19.2581 23.5805 19.9475H19.7979C19.6981 19.6935 19.5756 19.3171 19.4305 18.8182C19.367 18.5914 19.3216 18.4417 19.2944 18.3691C18.6413 19.0041 17.9428 19.4804 17.199 19.7979C16.4551 20.1153 15.6614 20.2741 14.8178 20.2741C13.3301 20.2741 12.1554 19.8704 11.2936 19.0631C10.4409 18.2558 10.0146 17.2352 10.0146 16.0016C10.0146 15.1852 10.2096 14.4595 10.5997 13.8245C10.9897 13.1804 11.534 12.6906 12.2325 12.3549C12.94 12.0102 13.956 11.7109 15.2804 11.4569C17.0674 11.1213 18.3056 10.8083 18.9951 10.518V10.137C18.9951 9.40228 18.8136 8.88069 18.4508 8.57227C18.0879 8.25477 17.4031 8.09603 16.3962 8.09603C15.7158 8.09603 15.1852 8.2321 14.8042 8.50423C14.4232 8.7673 14.1148 9.23446 13.8789 9.90573ZM18.9951 13.0081C18.5052 13.1714 17.7296 13.3664 16.6683 13.5932C15.607 13.8199 14.913 14.0422 14.5865 14.2599C14.0875 14.6137 13.8381 15.0627 13.8381 15.607C13.8381 16.1422 14.0377 16.6048 14.4368 16.9949C14.8359 17.3849 15.3439 17.5799 15.9607 17.5799C16.6502 17.5799 17.3078 17.3532 17.9337 16.8996C18.3964 16.5549 18.7002 16.1331 18.8454 15.6342C18.9452 15.3076 18.9951 14.6862 18.9951 13.7701V13.0081Z" fill="black"/>
+                            <path d="M26.4516 3.53776V0H30.2751V3.53776H26.4516ZM30.2751 5.49714V19.4985C30.2751 21.34 30.1526 22.6371 29.9077 23.39C29.6718 24.152 29.2092 24.7462 28.5198 25.1725C27.8395 25.5989 26.9686 25.812 25.9073 25.812C25.5263 25.812 25.1136 25.7758 24.6691 25.7032C24.2337 25.6397 23.762 25.5399 23.254 25.4038L23.9207 22.1382C24.1021 22.1745 24.2745 22.2017 24.4378 22.2199C24.592 22.2471 24.7371 22.2607 24.8732 22.2607C25.2632 22.2607 25.5807 22.1745 25.8257 22.0021C26.0796 21.8389 26.2475 21.6393 26.3291 21.4035C26.4107 21.1676 26.4516 20.46 26.4516 19.2808V5.49714H30.2751Z" fill="black"/>
+                            <path d="M34.2891 3.53776V0H38.1126V3.53776H34.2891ZM34.2891 19.9475V5.49714H38.1126V19.9475H34.2891Z" fill="black"/>
+                            <path d="M48.6714 5.49714V8.54505H46.0589V14.3687C46.0589 15.548 46.0816 16.2374 46.127 16.437C46.1814 16.6275 46.2948 16.7862 46.4671 16.9132C46.6485 17.0402 46.8663 17.1037 47.1202 17.1037C47.474 17.1037 47.9865 16.9813 48.6578 16.7363L48.9844 19.7026C48.0954 20.0836 47.0885 20.2741 45.9637 20.2741C45.2743 20.2741 44.6529 20.1607 44.0995 19.9339C43.5462 19.6981 43.138 19.3987 42.8749 19.0359C42.6209 18.664 42.4441 18.165 42.3443 17.5391C42.2626 17.0946 42.2218 16.1966 42.2218 14.845V8.54505H40.4665V5.49714H42.2218V2.62611L46.0589 0.394596V5.49714H48.6714Z" fill="black"/>
+                        </svg>
+                </h1>
+            </a>
+     
+
+            <div class="d-flex align-items-center justify-content-center conatainer-for-toogle-switch"> <!-- Container for menu icon and toggle button -->
+                
+                <label aria-label="switch" class="switch" for="toggleSwitch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+
+                <button aria-label="toogle-button" class="navbar-toggler navbar-toogle-mobile" id="navbar-toggler" >
+                    <i class="hamburger bi bi-list"></i>
+                    <span class="cross bi bi-x" style="display: none;"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-items" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="home">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="portfolio">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" data-target="about">gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="overlay-for-mobile d-xl-none">
+                <!-- Content that appears when the button is clicked -->
+                <div class="mobile-menu-container">
+                    <ul class="mb-2 mb-lg-0" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-link link-for-mobile " href="index.html" data-target="home">Home<i class="bi bi-box-arrow-up-right mx-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-for-mobile" href="resume.html" data-target="resume">Resume<i class="bi bi-box-arrow-up-right mx-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-for-mobile selected" href="portfolio.html" data-target="portfolio">Project<i class="bi bi-box-arrow-up-right mx-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-for-mobile" href="about.html" data-target="about">Gallery<i class="bi bi-box-arrow-up-right mx-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-for-mobile" href="contact.html" data-target="contact">Contact<i class="bi bi-box-arrow-up-right mx-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-center mt-2 overflow-hidden social-icon-in-menu">
+                    <a aria-label="instagram" href="https://www.instagram.com/iam_prajit/" class="social-icon bottom-to-top" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a aria-label="behance" href="https://www.behance.net/pradas3" class="social-icon bottom-to-top" target="_blank"><i
+                            class="bi bi-behance"></i></a>
+                    <a aria-label="dribbble" href="https://dribbble.com/PrajitO1" class="social-icon bottom-to-top" target="_blank"><i
+                            class="bi bi-dribbble"></i></a>
+                    <a aria-label="linkedin" href="https://www.linkedin.com/in/prajit-das-1b75881a2/" class="social-icon bottom-to-top" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS HERE -->
+    <div class="section-for-portfolio-content">
+        <div class="container">
+            <div class="d-flex">
+                <a class="back-to-project-button" href="portfolio.html"><i class="bi bi-arrow-left"></i>BACK TO project</a>
+            </div>
+            <h1 class="portfolio-title">Redesign and UX enhancements for the Maserati website.
+            </h1>
+
+            <div class="portfolio-image-holder-for-reco-casestudy d-flex flex-column">
+                <img class="img_one" src="Images/maserati/M1.webp" alt="">
+                <img class="img_three" src="Images/maserati/M2.webp" alt="">
+                <img class="img_four" src="Images/maserati/M3.webp"alt="">
+                <img class="img_five" src="Images/maserati/M4.webp"alt="">
+                <img class="img_six" src="Images/maserati/M5.webp" alt="">
+                <img class="img_seven" src="Images/maserati/M6.webp" alt="">
+                <img class="img_eight" src="Images/maserati/M7.webp" alt="">
+                <img class="img_eight" src="Images/maserati/M8.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER STARTS HERE -->
+    <div class="parent-container-for-footer">
+        <div class="container">
+            <h3 class="follow-me-text">Follow me on</h3>
+            <div class="d-flex flex-row align-items-center justify-content-center mt-2 overflow-hidden">
+                <a aria-label="instagram" href="https://www.instagram.com/iam_prajit/" class="social-icon bottom-to-top" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a aria-label="behance" href="https://www.behance.net/pradas3" class="social-icon bottom-to-top" target="_blank"><i
+                        class="bi bi-behance"></i></a>
+                <a aria-label="dribbble" href="https://dribbble.com/PrajitO1" class="social-icon bottom-to-top" target="_blank"><i
+                        class="bi bi-dribbble"></i></a>
+                <a aria-label="linkedin" href="https://www.linkedin.com/in/prajit-das-1b75881a2/" class="social-icon bottom-to-top" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="copyright-text mt-1">Copyright © 2023. All right reserved.</p>
+        </div>
+    </div>
+    <!-- FOOTER ENDS HERE -->
+
+    <!-- SCROLL TO TOP STARTS HERE -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script>
+        (function ($) {
+            "use strict";
+
+            $(document).ready(function () {
+                "use strict";
+
+                //Scroll back to top
+
+                var progressPath = document.querySelector('.progress-wrap path');
+                var pathLength = progressPath.getTotalLength();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+                progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+                progressPath.style.strokeDashoffset = pathLength;
+                progressPath.getBoundingClientRect();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+                var updateProgress = function () {
+                    var scroll = $(window).scrollTop();
+                    var height = $(document).height() - $(window).height();
+                    var progress = pathLength - (scroll * pathLength / height);
+                    progressPath.style.strokeDashoffset = progress;
+                }
+                updateProgress();
+                $(window).scroll(updateProgress);
+                var offset = 50;
+                var duration = 550;
+                jQuery(window).on('scroll', function () {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.progress-wrap').addClass('active-progress');
+                    } else {
+                        jQuery('.progress-wrap').removeClass('active-progress');
+                    }
+                });
+                jQuery('.progress-wrap').on('click', function (event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                    return false;
+                })
+
+
+            });
+
+        })(jQuery);
+    </script>
+    <!-- SCROLL TO TOP ENDS HERE -->
+
+    <script>
+        let imageIndex = 0; // Initialize the index of the current image
+const images = [
+    "Images/about_section_image.png",
+    "Images/IMG_20220315_121437.jpg",
+];
+
+function changeImage() {
+    const imgElement = document.querySelector('.gallery-img');
+    imgElement.src = images[imageIndex];
+    imageIndex++;
+    if (imageIndex >= images.length) {
+        imageIndex = 0;
+    }
+}
+setInterval(changeImage, 4000);
+    </script>
+
+    <!-- NAV SAHDOW STARTS HERE -->
+    <script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    
+    </script>
+
+    <!-- NAV SAHDOW ENDS HERE -->
+
+    <!-- NAVBAR TOOGLE  STARTS HERE-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navbarToggler = document.getElementById('navbar-toggler');
+            const navbarCollapse = document.getElementById('navbarSupportedContent');
+            const hamburgerIcon = navbarToggler.querySelector('.hamburger');
+            const crossIcon = navbarToggler.querySelector('.cross');
+        
+            navbarToggler.addEventListener('click', function() {
+                navbarCollapse.classList.toggle('show');
+                hamburgerIcon.style.display = hamburgerIcon.style.display === 'none' ? 'inline' : 'none';
+                crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
+            });
+        });
+        
+    </script>
+    <!-- NAVBAR TOOGLE  ENDS HERE-->
+
+    <!-- REVEAL EFFECT STARTS HERE -->
+    <script>
+        var rafId = null;
+        var delay = 200;
+        var lTime = 0;
+
+        function scroll() {
+        var scrollTop = $(window).scrollTop();
+        var height = $(window).height()
+        var visibleTop = scrollTop + height;
+        $('.reveal').each(function() {
+            var $t = $(this);
+            if ($t.hasClass('reveal_visible')) { return; }
+            var top = $t.offset().top;
+            if (top <= visibleTop) {
+            if (top + $t.height() < scrollTop) {
+                $t.removeClass('reveal_pending').addClass('reveal_visible');
+            } else {
+                $t.addClass('reveal_pending');
+                if (!rafId) requestAnimationFrame(reveal);  
+            }
+            }
+        });
+        }
+        function reveal() {
+        rafId = null;
+        var now = performance.now();
+        
+        if (now - lTime > delay) {
+            lTime = now;
+            var $ts = $('.reveal_pending');
+            $($ts.get(0)).removeClass('reveal_pending').addClass('reveal_visible');  
+        }
+        
+        
+        if ($('.reveal_pending').length >= 1) rafId = requestAnimationFrame(reveal);
+        }
+
+        $(scroll);
+        $(window).scroll(scroll);
+    </script>
+    <!-- REVEAL EFFECT ENDS HERE -->
+
+    <!-- LEFT TO RIGHT ANIMATION STARTS HERE -->
+    <script>
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('.bottom-to-top');
+            elements.forEach((element) => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight) {
+                    element.classList.add('bottom-to-top-visible');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', revealOnScroll);
+        window.addEventListener('scroll', revealOnScroll);
+
+    </script>
+
+    <!-- LEFT TO RIGHT ANIMATION ENDS HERE -->
+
+    
+    <!-- IMAGE OPEN STARTS HERE -->
+
+    <script>
+        function revealOnScroll() {
+  const elements = document.querySelectorAll('.reveal-curve-left');
+  elements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elementTop < windowHeight) {
+      element.classList.add('reveal-curve-left-visible');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', revealOnScroll);
+window.addEventListener('scroll', revealOnScroll);
+
+
+    </script>
+
+
+
+
+<script>
+    // Get necessary elements
+const navbarToggler = document.getElementById('navbar-toggler');
+const overlay = document.getElementById('overlay');
+
+// Toggle the overlay on button click
+navbarToggler.addEventListener('click', function() {
+    overlay.classList.toggle('active');
+});
+
+</script>
+
+
+
+    <!-- IMAGE OPEN STARTS HERE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/java_script.js"></script>
+    <script src="js/dark_mode.js"></script>
+    <script>
+        // Initialize Bootstrap tabs
+        var myTab = new bootstrap.Tab(document.getElementById('home-tab'));
+        myTab.show();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+
+  --text-primary-for-dark-mode:#F6f6f6;
+  --text-secondary-for-dark-mode:#9b9b9b;
+  --text-tertiary-for-dark-mode:#6D6D6D;
+
+  --background-primary-for-dark-mode:#0D0D0D;
+  --background-secondary-for-dark-mode:#1A1D25;
+
+  --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #081A34 0%, #0C0E1A 50%);
+
+  --portfolio-card-background: linear-gradient(93deg, #262B35 -1.28%, #171B22 99.56%, #21252C 99.56%);
+  
+  --portfolio-category-tag:#171B25;
+  --toogle-background:#2C2E3B;
+  --service-card-hover:linear-gradient(237deg, rgba(146, 171, 237, 0.47) -13.88%, rgba(146, 171, 237, 0.00) 100%), #0D0D0D;
+  --half-circle-background:linear-gradient(159deg, #F6F6F6 7.39%, #759CFF 73.45%);
+  --bigtext:linear-gradient(180deg, rgba(117, 156, 255, 0.48) 37%, rgba(117, 156, 255, 0.00) 90.29%);
+
+  --border-line-one-for-dark-mode:#6D6D6D;
+
+  --primary-color-for-dark-mode:#759CFf;
+
+  --button-color:linear-gradient(180deg, rgba(255, 255, 255, 0.20) 22.34%, rgba(255, 255, 255, 0.00) 66.67%),#759CFF;
+  --button-in-portfolio-section:#222A3D;
+
+  --navbar-shadow-color:rgba(74, 74, 74, 0.15);
+  --service-card-shadow:rgba(185, 185, 185, 0.0);
+  --card-border:rgb(230, 230, 230, 0.0);
+
+
+  --font-1:'Nunito Sans', sans-serif;
+  --font-2:'Open Sans', sans-serif;
+}
+body.light-mode {
+
+  --text-primary-for-dark-mode:#0A0911;
+  --text-secondary-for-dark-mode:#666666;
+  --text-tertiary-for-dark-mode:#8E8E92;
+
+  --background-primary-for-dark-mode:#ffffff;
+  --background-secondary-for-dark-mode:#f6f6f6;
+  --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #f3f6ff 0%, #f9fbff 50%);
+ 
+  --portfolio-card-background:#FFF;
+  --toogle-background:#e1e1e1;
+  --portfolio-category-tag:#F6F6F6;
+  --service-card-hover:linear-gradient(227deg, rgba(181, 199, 243, 0.46) 0%, rgba(231, 237, 251, 0.00) 100%), #FFF;
+  --half-circle-background:linear-gradient(150deg, #B5C7F3 7.69%, #1149D7 103.89%);
+
+  --border-line-one-for-dark-mode:#8E8E92;
+  --bigtext:linear-gradient(180deg, rgba(17, 73, 215, 0.48) 41.05%, rgba(17, 73, 215, 0.00) 80.54%);
+  --primary-color-for-dark-mode:#1149D7;
+
+  --button-color:linear-gradient(180deg, rgba(255, 255, 255, 0.20) 22.34%, rgba(255, 255, 255, 0.00) 66.67%),#1149D7;
+  --button-in-portfolio-section:#E7EDFB;
+
+  --navbar-shadow-color:rgba(187, 187, 187, 0.15);
+  --service-card-shadow:rgba(209, 209, 209, 0.15);
+  --card-border:rgb(230, 230, 230);
+
+
+
+
+  --font-1:'Nunito Sans', sans-serif;
+  --font-2:'Open Sans', sans-serif;
+}
+
+
+
+.container-for-hero-section-in-contact-page{
+  width: 100%;
+  min-height:400px;
+  padding-top: 56px;
+  background-color:var(--gallery-hero-section) ;
+    
+
+}
+
+
+
+.hero-section-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.svg2{
+  height: 90px;
+  width: 100px; 
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transform: rotate(180deg);
+}
+
+.svg1{
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 40px;
+  bottom:10px;
+  transform: rotate(90deg);
+}
+
+.svg3{
+  height: 63px;
+  width: 66px;
+  position: absolute;
+  left: 155px;
+  top: 40px;
+  transform: rotate(20deg);
+}
+
+.svg4{
+  height: 63px;
+  width: 66px;
+  position: absolute;
+  right:170px;
+  bottom:40px;
+  transform: rotate(45deg);
+}
+
+
+.gallery-text{
+  background:var(--bigtext);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family:var(--font-1);
+font-size: 200px;
+font-weight:bold;
+text-align: center;
+}
+
+
+.a-bit-about-me-text{
+    font-size: 32px;
+    font-family:var(--font-1);
+    margin: 0;
+    font-weight:bold;
+    color:var(--text-primary-for-dark-mode);
+    text-align: center;
+    max-width:60%;
+    margin-top: -24px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    font-family:var(--font-2);
+    font-size: 14px;
+    color:#f3f3f3;
+    margin: 0;
+    padding-bottom: 8px;
+    position: relative;
+
+}
+
+.all-it-starts{
+    font-size: 48px;
+    font-family:var(--font-1);
+    margin: 0;
+    font-weight: normal;
+    color: #F3F3F3;
+    font-weight: bold;
+
+}
+.parent-container-for-contact-section{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.container-for-number-and-email{
+    /* padding-left: 40px; */
+  }
+  
+  .container-for-inputs{
+    /* padding-right: 40px; */
+  }

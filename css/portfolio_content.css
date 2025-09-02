@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+  
+    --text-primary-for-dark-mode:#F6f6f6;
+    --text-secondary-for-dark-mode:#9b9b9b;
+    --text-tertiary-for-dark-mode:#6D6D6D;
+  
+    --background-primary-for-dark-mode:#0D0D0D;
+    --background-secondary-for-dark-mode:#1A1D25;
+  
+    --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #081A34 0%, #0C0E1A 50%);
+
+    --portfolio-card-background: linear-gradient(93deg, #262B35 -1.28%, #171B22 99.56%, #21252C 99.56%);
+    --portfolios-section-background:#0d0d0d;
+    --portfolio-category-tag:#171B25;
+    --toogle-background:#2C2E3B;
+    --service-card-hover:linear-gradient(237deg, rgba(146, 171, 237, 0.47) -13.88%, rgba(146, 171, 237, 0.00) 100%), #0D0D0D;
+    --half-circle-background:linear-gradient(159deg, #F6F6F6 7.39%, #759CFF 73.45%);
+    --bigtext:linear-gradient(180deg, rgba(117, 156, 255, 0.48) 37%, rgba(117, 156, 255, 0.00) 90.29%);
+  
+    --border-line-one-for-dark-mode:#6D6D6D;
+  
+    --primary-color-for-dark-mode:#759CFf;
+  
+    --button-color:linear-gradient(180deg, rgba(255, 255, 255, 0.20) 22.34%, rgba(255, 255, 255, 0.00) 66.67%),#759CFF;
+    --button-in-portfolio-section:#222A3D;
+  
+    --navbar-shadow-color:rgba(74, 74, 74, 0.15);
+    --service-card-shadow:rgba(185, 185, 185, 0.0);
+    --card-border:#222A3D;
+    --sticky-container:#1A1D25;
+    --gallery-hero-section:#0d0d0d;
+  
+    --font-1:'Nunito Sans', sans-serif;
+    --font-2:'Open Sans', sans-serif;
+  }
+  body.light-mode {
+  
+    --text-primary-for-dark-mode:#0A0911;
+    --text-secondary-for-dark-mode:#666666;
+    --text-tertiary-for-dark-mode:#8E8E92;
+  
+    --background-primary-for-dark-mode:#ffffff;
+    --background-secondary-for-dark-mode:#f6f6f6;
+    --overlay-background-in-hero-section:radial-gradient(ellipse at bottom, #f3f6ff 0%, #f9fbff 50%);
+
+    --portfolio-card-background:#FFF;
+    --toogle-background:#e1e1e1;
+    --portfolio-category-tag:#F6F6F6;
+    --service-card-hover:linear-gradient(227deg, rgba(181, 199, 243, 0.46) 0%, rgba(231, 237, 251, 0.00) 100%), #FFF;
+    --half-circle-background:linear-gradient(150deg, #B5C7F3 7.69%, #1149D7 103.89%);
+    --portfolios-section-background:#f6f6f6;
+    --border-line-one-for-dark-mode:#8E8E92;
+  
+    --primary-color-for-dark-mode:#1149D7;
+    --bigtext:linear-gradient(180deg, rgba(17, 73, 215, 0.48) 41.05%, rgba(17, 73, 215, 0.00) 80.54%);
+    --button-color:linear-gradient(180deg, rgba(255, 255, 255, 0.20) 22.34%, rgba(255, 255, 255, 0.00) 66.67%),#1149D7;
+    --button-in-portfolio-section:#E7EDFB;
+  
+    --navbar-shadow-color:rgba(187, 187, 187, 0.15);
+    --service-card-shadow:rgba(209, 209, 209, 0.15);
+    --card-border:rgb(230, 230, 230);
+    --sticky-container:#ffffff;
+    --gallery-hero-section:#f6f6f6;
+  
+  
+  
+    --font-1:'Nunito Sans', sans-serif;
+    --font-2:'Open Sans', sans-serif;
+  }
+  
+
+  .section-for-portfolio-content{
+    margin-top: 52px;
+  }
+
+  .portfolio-title{
+    font-size: 40px;
+    font-family: var(--font-1);
+    color: var(--text-primary-for-dark-mode);
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .back-to-project-button{
+    display: flex;
+  height: 48px;
+  padding: 8px 16px 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  text-decoration: none;
+  color: var(--primary-color-for-dark-mode);
+  margin-top: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: var(--secondary-button);
+  font-family: var(--font-2);
+  font-weight: 500;
+  margin-bottom: 16px;
+
+  }
+
+  .back-to-project-button:hover{
+    background:var(--secondary-button-hover);
+    color: var(--primary-color-for-dark-mode);
+  }
+
+
+
+
+
+  .portfolio-image-holder-for-reco-casestudy{
+    margin-bottom: 24px;
+
+  }
+
+  .img_one{
+
+  }
+
+
+  /* LARGE DEVICE SCREEN */
+
+@media (min-width: 1200px) {
+
+}
+
+
+/* MEDIUM DEVICE SCREEN */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+
+
+
+
+}
+
+
+
+
+/* SMALL DEVICE SCREEN */
+
+@media (max-width: 767px) {
+
+
+    .portfolio-title{
+        font-size:32px;
+        margin-bottom: 16px;
+      
+      }
+
+}
